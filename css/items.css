@@ -1,0 +1,81 @@
+.content_items {
+  float: right;
+  width: 780px;
+}
+.content_item {
+  display: inline-block;
+  width: 250px;
+  height: 370px;
+  border-color: #424242;
+  border-radius: 8px;
+  border: solid;
+  padding: 20px;
+  margin-right: 11px;
+  margin-bottom: 15px;
+}
+.content_item:nth-child(3n) {
+  margin-right: 0;
+}
+.content_item-figure {
+  height: 310px;
+  margin: 0;
+}
+.content_item-caption {
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 4px;
+  color: #424242;
+}
+.content_item-price {
+  height: 30px;
+  line-height: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+}
+.content_add-to-cart {
+  height: 100%;
+  display: inline-block;
+  float: right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  color: #b1df00;
+}
+.content_pages {
+  text-align: center;
+  height: 25px;
+  margin-top: 10px;
+}
+.content_page-number {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #8d8d8d;
+  cursor: pointer;
+}
+.content_page-number_current {
+  font-size: 18px;
+  font-weight: bold;
+}
+.content_about-company {
+  border-top: 1px solid #000;
+  margin-top: 60px;
+}
+.content_about-company-column {
+  width: 368px;
+  height: 430px;
+  display: inline-block;
+  margin: 0;
+  padding: 30px 0;
+}
+.content_about-company-column_left {
+  float: left;
+}
+.content_about-company-column_right {
+  float: right;
+}

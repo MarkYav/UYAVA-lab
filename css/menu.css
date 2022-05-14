@@ -1,0 +1,43 @@
+.menu {
+  height: 80px;
+  background-color: #424242;
+  position: relative;
+}
+.menu_inner {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+}
+.menu_item {
+  display: inline-block;
+  vertical-align: top;
+}
+.menu_link {
+  position: relative;
+  color: #fff;
+  line-height: 60px;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0 18px;
+  letter-spacing: 1px;
+}
+.menu_link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.menu_link::after {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 2px;
+  top: 50%;
+  right: -4px;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+.menu_link_last::after {
+  display: none;
+}

@@ -1,0 +1,39 @@
+.header {
+  background-color: #ffffff;
+  height: 230px;
+  position: relative;
+}
+.header_logo {
+  float: left;
+  height: 100%;
+  vertical-align: middle;
+}
+.logo {
+  height: 380px;
+  widows: 380px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header_contacts {
+  float: right;
+  text-align: right;
+}
+.header_phones {
+  font-family: "Open Sans Condensed Light", sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 32px 0 7px 0;
+}
+.header_phone {
+  display: block;
+  text-decoration: none;
+  color: #424242;
+}
+.header_feedback-link {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #424242;
+  border-bottom: 2px dashed #424242;
+}

@@ -1,0 +1,38 @@
+.content{
+	background-color: #fff;
+}
+
+.content_catalog {
+  float: left;
+  width: 200px;
+}
+.content_nav {
+  height: 40px;
+}
+.content_nav-inner {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.content_nav-item {
+  display: inline-block;
+  padding-right: 20px;
+  position: relative;
+}
+.content_nav-item::after {
+  position: absolute;
+  content: "/";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+.content_nav-item_current::after {
+  display: none;
+}
+.content_nav-link {
+  color: #424242;
+}
+.content_nav-link_current {
+  text-decoration: none;
+  cursor: default;
+}

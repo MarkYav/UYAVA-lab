@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  color: #424242;
+  line-height: 22px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  height: 100%;
+}
+.overlay::before {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 10;
+}
+.container {
+  margin: auto;
+  width: 1000px;
+  padding: 10px;
+  height: 100%;
+  position: relative;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -220px;
+}
+.push {
+  height: 220px;
+}
+
+.slider_controls {
+  display: block;
+}

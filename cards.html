@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>UYAVA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/slyder.css">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/aside.css">
+   <link rel="stylesheet" href="css/items.css">
+   <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="css/form.css">
+   <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body onload = "loadPage()">
+  <div class="wrap">
+    <header class="header">
+      <div class="container clearfix">
+        <div class="header_logo">
+          <img src="img/hs-long-logo.jpg" alt="Логотип компании" class="logo">
+        </div>
+        <div class="header_contacts">
+          <p class="header_phones">
+            <a class="header_phone">+380(97) 952-22-35</a>
+            <a class="header_phone">+380(63) 349-69-40</a>
+          </p>
+          <a href="#" class="header_feedback-link">Зворотній зв'язок</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu">
+      <div class="container">
+        <ul class="menu_inner">
+          <li class="menu_item"><a href="index.html" class="menu_link">Головна</a></li>
+          <li class="menu_item"><a href="cards.html" class="menu_link">Каталог</a></li>
+          <li class="menu_item"><a href="#" class="menu_link">Доставка та оплата</a></li>
+          <li class="menu_item"><a href="#" class="menu_link">Прайс-лист</a></li>
+          <li class="menu_item"><a href="#" class="menu_link menu_link_last">Контакти</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="slider">
+        <div class="bubbles">
+            <div style="background-color: #4242ff; opacity: 30%; left: -1vw; top: -50px; height: 200px; width: 200px; position: absolute; border-radius: 50%; z-index: -1;"></div>
+            <div style="background-color: #42ff42; opacity: 30%; left: 6vw; top: 150px; height: 300px; width: 300px; position: absolute; border-radius: 50%; z-index: -1;"></div>
+            <div style="background-color: #ff4242; opacity: 30%; left: 12vw; top: -50px; height: 160px; width: 160px; position: absolute; border-radius: 50%; z-index: -1;"></div>
+            <div style="background-color: #ffff42; opacity: 30%; left: 30vw; top: -50px; height: 130px; width: 130px; position: absolute; border-radius: 50%; z-index: -1;"></div>
+            <div style="background-color: #42ffff; opacity: 30%; left: 60vw; top: -50px; height: 200px; width: 200px; position: absolute; border-radius: 50%; z-index: -1;"></div>
+            <div style="background-color: #ff42ff; opacity: 30%; left: 35vw; top: 100px; height: 320px; width: 320px; position: absolute; border-radius: 50%; z-index: -1;"></div>
+            <div style="background-color: #ff4242; opacity: 30%; left: 75vw; top: 80px; height: 150px; width: 150px; position: absolute; border-radius: 50%; z-index: -1;"></div>
+            <div style="background-color: #42ff42; opacity: 30%; left: 81vw; top: 130px; height: 120px; width: 120px; position: absolute; border-radius: 50%; z-index: -1;"></div>
+            <div style="background-color: #4242ff; opacity: 30%; left: 90vw; top: 20px; height: 120px; width: 120px; position: absolute; border-radius: 50%; z-index: -1;"></div>
+        </div>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade"><img src="img/furniture_2.jpg"></div>
+            <div class="mySlides fade"><img src="img/furniture_10.jpg"></div>
+            <div class="mySlides fade"><img src="img/furniture_9.jpg"></div>
+
+            <a class="prevBtn" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="nextBtn" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div class="dotsContainer">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <main class="content">
+      <div class="container clearfix">
+        <nav class="content_nav">
+          <ul class="content_nav-inner">
+            <li class="content_nav-item">
+              <a href="index.html" class="content_nav-link">Каталог</a>
+            </li>
+            <li class="content_nav-item">
+              <a href="#" class="content_nav-link">Під замовлення</a>
+            </li>
+            <li class="content_nav-item content_nav-item_current">
+              <a href="#" class="content_nav-link content_nav-link_current">Кухні</a>
+            </li>
+          </ul>
+        </nav>
+
+        <aside class="content_catalog">
+            <ul class="content_nav-aside">
+                <li class="content_nav-aside-item">
+                    <div class="content_nav-aside-link content_nav-aside-link_current">Кухні</div>
+                    <div class = "content_nav-aside-block">
+                        <ul class="content_nav-aside-inner">
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link content_nav-aside-inner-link_current">Наші роботи</a>
+                            </li>
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Кухні під замовлення</a>
+                            </li>
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Планування</a>
+                            </li>
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Встановалення</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content_nav-aside-item">
+                    <div class="content_nav-aside-link">Шафи-купе</div>
+                    <div class = "content_nav-aside-block">
+                        <ul class="content_nav-aside-inner">
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Шафи-купе під замовлення</a>
+                            </li>
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Планування</a>
+                            </li>
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Встановалення</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content_nav-aside-item">
+                    <div class="content_nav-aside-link">Прихожа</div>
+                    <div class = "content_nav-aside-block">
+                        <ul class="content_nav-aside-inner">
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Прихожа під замовлення</a>
+                            </li>
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Планування</a>
+                            </li>
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Встановалення</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="content_nav-aside-item">
+                    <div class="content_nav-aside-link">Ліжка</div>
+                    <div class = "content_nav-aside-block">
+                        <ul class="content_nav-aside-inner">
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Ліжка під замовлення</a>
+                            </li>
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Планування</a>
+                            </li>
+                            <li class="content_nav-aside-inner-item">
+                                <a href="#" class="content_nav-aside-inner-link">Встановалення</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="content_items">
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_1.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Кухня Rottere</figcaption>
+                </figure>
+                <p class="content_item-price">₴10.000<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_2.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Кухня Silitta</figcaption>
+                </figure>
+                <p class="content_item-price">₴15.000<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_3.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Шафа Werto</figcaption>
+                </figure>
+                <p class="content_item-price">₴25.000<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_4.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Ванна Kupino</figcaption>
+                </figure>
+                <p class="content_item-price">₴10.000<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_5.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Ліжко Dihno</figcaption>
+                </figure>
+                <p class="content_item-price">₴5.000<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_6.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Ліжко Foro</figcaption>
+                </figure>
+                <p class="content_item-price">₴7.000<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_7.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Кухня Galis</figcaption>
+                </figure>
+                <p class="content_item-price">₴12.000<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_8.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Кухня Foting</figcaption>
+                </figure>
+                <p class="content_item-price">₴13.500<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_9.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Кухня Scala</figcaption>
+                </figure>
+                <p class="content_item-price">₴20.000<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <article class="content_item">
+                <figure class="content_item-figure">
+                    <img src="img/furniture_10.jpg" width = "100%" height="275px" style="object-fit: cover;">
+                    <figcaption class="content_item-caption">Кухня Novia</figcaption>
+                </figure>
+                <p class="content_item-price">₴15.000<i class="material-icons content_add-to-cart">shopping_cart_checkout</i></p>
+            </article>
+
+            <div class="content_pages">
+                <a onclick="displayItems(1)" class="content_page-number content_page-number_current">1</a>
+                <a onclick="displayItems(2)" class="content_page-number">2</a>
+            </div>
+            <div class="content_about-company clearfix">
+                <p class="content_about-company-column content_about-company-column_left">Дерев'яні матеріали - це основа всього виробництва меблів. Коли ще не було широкого вибору матеріалів, розмаїття кольорів, і технології були примітивні, меблі виготовляли з масиву дерева. Сьогодні незбиране дерево - дороге задоволення, на заміну масиву приходить шпон. Передове німецьке обладнання дозволяє нам виготовляти конструкції будь-якої складності з різноманітних матеріалів. Досвідчені проектувальники і дизайнери розроблять для Вас бажаний проект меблів для дому або офісу.</p>
+                <p class="content_about-company-column content_about-company-column_right">Кухонні меблі - один з найскладніших видів складальних робіт, так як тумби і шафки складаються з безлічі деталей і вимагають максимальної пильності і точності. Додаткових проблем додає необхідність стикування стільниць, врізки мийки та сантехнічних комунікацій, а також чіткі вимоги до монтажу навісних шаф. Дерев'яні матеріали - це основа всього виробництва меблів. Коли ще не було широкого вибору матеріалів, розмаїття кольорів, і технології були примітивні, меблі виготовляли з масиву дерева. Сьогодні незбиране дерево - дороге задоволення, на заміну масиву приходить шпон.</p>
+            </div>
+        </div>
+      </div>
+    </main>
+
+  <footer class="footer">
+    <div class="container clearfix">
+      <section class="footer_column footer_contacts">
+        <p class="footer_copyright">© 2015-2022 ТОВ "UYAVA"</p>
+        <a href="" class="footer_email">support@uyava.com</a>
+      </section>
+      <section class="footer_column footer_nav">
+        <ul class="footer_nav-inner">
+          <li class="footer_nav-item">
+            <a href="index.html" class="footer_nav-link">Головна</a>
+          </li>
+          <li class="footer_nav-item">
+            <a href="cards.html" class="footer_nav-link">Каталог</a>
+          </li>
+          <li class="footer_nav-item">
+            <a href="" class="footer_nav-link">Доставка та оплата</a>
+          </li>
+          <li class="footer_nav-item">
+            <a href="" class="footer_nav-link">Прайс-лист</a>
+          </li>
+          <li class="footer_nav-item">
+            <a href="" class="footer_nav-link">Контакти</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer_column footer_additional">
+        <p class="bz-logo">
+          <a href="" class="bz-link">ТОВ "UYAVA"</a>
+        </p>
+      </section>
+    </div>
+  </footer>
+
+  <form action="" method="post" name="feedback" class="feedback feedback_popup">
+    <p class="feedback_title">Зворотній зв'язок</p>
+    <label for="name">Ваше ім'я *<input type="text" name="name" required class="feedback_input" placeholder="Поле обов'язкове для заполнения" autofocus></label>
+    <label for="phone">Телефон *<input type="phone" name="phone" required class="feedback_input" placeholder="Поле обов'язкове для заполнения"></label>
+    <label for="email">Email *<input type="email" name="email" required class="feedback_input" placeholder="Поле обов'язкове для заполнения"></label>
+    <label for="message">Повідомлення<textarea name="message" class="feedback_input feedback_input_message"></textarea></label>
+    <input type="submit" class="feedback_submit" value="Відправити">
+    <a href="" class="feedback_close-btn"></a>
+  </form>
+
+  <script src="js/pages.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/aside.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>
